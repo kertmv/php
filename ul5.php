@@ -197,7 +197,7 @@
     ?>
     <?php
     $pildid = array(
-        "prentice.png", "freeland.png", "peterus.png", "devlin.png", "gabriel.png", "pete.png"
+        "prentice.webp", "freeland.webp", "peterus.webp", "devlin.webp", "gabriel.webp", "pete.webp"
     );
     
     if (!file_exists("img")) {
@@ -205,7 +205,7 @@
     }
 
     foreach ($pildid as $pilt) {
-        copy($pilt, "img/$pilt");
+        copy($pilt, "webp/$pilt");
     }
     
     echo "<p>Kolmas pilt:</p>";
