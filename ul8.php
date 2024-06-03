@@ -94,7 +94,7 @@ switch ($aastaaeg) {
 }
 
 if ($imageSource) {
-    echo "<img src="" . $imageSource . "" alt="#">";
+    echo "<img src='" . $imageSource . "' alt='#'>";
 } else {
     echo "Vali aastaaeg";
 }
