@@ -8,14 +8,14 @@
 <body>
 <div class="container">
 <?php
-echo "<h3>Tere paiksekene</h3>";
+echo "<p>Tere paiksekene</p>";
 function tervita() {
     echo "Tere paiksekesekene!";
 }
 tervita();
 ?>
 <?php
-echo "<h3>Uudiskiri</h3>";
+echo "<p>Uudiskiri</p>";
 function liitum() {
     $vorm ='
     <form action="#" method="GET">
@@ -32,7 +32,7 @@ function liitum() {
 liitum();
 ?>
 <form action="" method="GET">
-    <h3>kasutaja</h3>
+    <p>kasutaja</p>
         <label for="kasutaja">Sisesta oma kasutaja nimi:</label><br>
         <input type="text" id="kasutaja" name="kasutaja"><br>
         <input type="submit" value="Saada">
@@ -55,7 +55,7 @@ if (isset($_GET["kasutaja"])) {
 }
 ?>
 <form action="" method="get">
-        <h3>numbrid</h3>
+        <p>numbrid</p>
         <label for="algus">esimene arv:</label>
         <input type="number" id="algus" name="algus" required><br><br>
         <label for="lopp">viimane arv:</label>
@@ -93,7 +93,7 @@ if (isset($_GET["algus"]) && isset($_GET["lopp"])) {
     echo "Palun sisesta nii algus kui ka lõpparv";
 }
 ?>
-<h2>Ristküliku Pindala</h2>
+<p>Ristküliku Pindala</p>
     <form action="" method="get">
         <label for="pikkus">Pikkus:</label>
         <input type="number" id="pikkus" name="pikkus" required><br><br>
@@ -118,7 +118,7 @@ if (isset($_GET["algus"]) && isset($_GET["lopp"])) {
         return $pindala;
     }
     ?>
-    <h2>Sisesta oma isikukood:</h2>
+    <p>Sisesta oma isikukood:</p>
     <form action="" method="get">
         <input type="text" name="isikukood" placeholder="Sisesta isikukood">
         <input type="submit" value="Kontrolli">
@@ -163,13 +163,12 @@ $alus = array("kass", "koer", "hiir", "hunt", "jänes");
 $oeldis = array("jookseb", "magab", "sööb", "mängib", "vaatab");
 $sihitis = array("õue", "toas", "metsas", "aias", "jõe ääres");
 $lause = koosta_lause($alus, $oeldis, $sihitis);
-echo "<h3>Suvaline lause 3 massiviga alus oeldis ja sihitis</h3>";
+echo "<p>Suvaline lause 3 massiviga alus oeldis ja sihitis</p>";
 echo "<p>$lause</p>";
 ?>
-</body>
-</html>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+    
 </body>
 </html>
