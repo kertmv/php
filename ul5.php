@@ -8,23 +8,23 @@
 <body>
 <div class="container">
     <?php
-    $tudrukud = array("Subaru","BMW","Acura","Mercedes-Benz","Lexus","GMC","Volvo","Toyota");
+    $tudrukud = array("Liisa","Madli","Lisete","Maili","Marion","Keiiu","Marta","Lisandra");
     sort($tudrukud);
-    echo "<p>Sorteeritud tüdrukute nimed:</p>";
+    echo "<p>Sorteeritud tĆ¼drukute nimed:</p>";
     echo "<ul>";
     foreach ($tudrukud as $nimi) {
         echo "<li>$nimi</li>";
     }
     echo "</ul>";
-        echo "<p>Esimesed 3 tüdruku nime:</p>";
+        echo "<p>Esimesed 3 tĆ¼druku nime:</p>";
         echo "<ul>";
         for ($i = 0; $i < 3; $i++) {
             echo "<li>{$tudrukud[$i]}</li>";
         }
         echo "</ul>";
-        echo "<p>Viimane tüdruku nimi:<p>";
+        echo "<p>Viimane tĆ¼druku nimi:<p>";
         echo "<p>{$tudrukud[count($tudrukud) - 2]}</p>";
-        echo "<p>Suvaline tüdruku nimi:</p>";
+        echo "<p>Suvaline tĆ¼druku nimi:</p>";
         $suvanimi = rand(0, count($tudrukud) - 1);
         echo "<p>{$tudrukud[$suvanimi]}</p>";
         ?>
@@ -57,11 +57,11 @@
     $autodearv = count($auto);
     echo "<p>Autode arv: $autodearv</p>";
 
-    echo "<p>Kas massivid on ühe pikkused?</p>";
+    echo "<p>Kas massivid on Ć¼he pikkused?</p>";
     if (count($auto) == count($vinkood)) {
-        echo "<p>Massiivid on ühepikkused</p>";
+        echo "<p>Massiivid on Ć¼hepikkused</p>";
     } else {
-        echo "<p>Massiivid ei ole ühepikkused</p>";
+        echo "<p>Massiivid ei ole Ć¼hepikkused</p>";
     }
     $toyotad = 0;
     $audid = 0;
@@ -77,8 +77,8 @@
     echo "<p>Toyota marki autosid: $toyotad</p>";
     echo "<p>Audide arv</p>";
     echo "<p>Audi marki autosid: $audid</p>";
-    echo "<p>Vin koodid mille arv on väiksem kui 17</p>";
-    echo "<p>VIN koodid, mille märkide arv on väiksem kui 17:</p>";
+    echo "<p>Vin koodid mille arv on vĆ¤iksem kui 17</p>";
+    echo "<p>VIN koodid, mille mĆ¤rkide arv on vĆ¤iksem kui 17:</p>";
     foreach ($vinkood as $vin) {
         if (strlen($vin) < 17) {
             echo "<p>$vin</p>";
@@ -120,7 +120,7 @@
             $x = array_search($nim1, $firmad);
             unset($firmad[$x]);
             sort($firmad);
-            echo "<p>Firmade nimed pärast eemaldamist:</p>";
+            echo "<p>Firmade nimed pĆ¤rast eemaldamist:</p>";
             echo "<ul>";
             foreach ($firmad as $nimi) {
                 echo "<li>$nimi</li>";
@@ -141,16 +141,16 @@
     $pik = array_map("strlen", $riigid);
     $inde = array_search(max($pik), $pik);
     
-    echo "<p>Kõige pikem riik</p>";
+    echo "<p>KĆµige pikem riik</p>";
     echo $riigid[$inde];
     echo "<br>";
     echo max($pik);
     ?>
     <?php
     $nimed = array(
-        "瀚聪", "月松", "雨萌", "展博", "雪丽", "哲恒", "慧妍", "博裕", "宸瑜", "奕漳",
-        "思宏", "伟菘", "彦歆", "睿杰", "尹智", "琪煜", "惠茜", "晓晴", "志宸", "博豪",
-        "璟雯", "崇杉", "俊誉", "军卿", "辰华", "娅楠", "志宸", "欣妍", "明美"
+        "ē€čŖ", "ęę¯¾", "é›Øč", "å±•å¨", "é›Ŗäø½", "å“²ę’", "ę…§å¦¨", "å¨č£•", "å®øē‘", "å•ę¼³",
+        "ę€¯å®¸", "ä¼č¸", "å½¦ę­†", "ē¯æę¯°", "å°¹ę™ŗ", "ēŖē…", "ę č", "ę™“ę™´", "åæ—å®ø", "å¨č±Ŗ",
+        "ē’é›Æ", "å´‡ę¯‰", "äæčŖ‰", "å†›å¨æ", "č¾°å¨ˇ", "åØ…ę ", "åæ—å®ø", "ę¬£å¦¨", "ęˇē¾ˇ"
     );
     
     sort($nimed);
@@ -160,7 +160,7 @@
     echo "<p>viimane hiina text</p>";
     echo "Viimane nimi: " . end($nimed) . "<br>";
     
-    echo "<p>Nimed kasvavas järjekorras:</p>";
+    echo "<p>Nimed kasvavas jĆ¤rjekorras:</p>";
     echo "<ul>";
     foreach ($nimed as $nim2) {
         echo "<li>$nim2</li>";
@@ -211,7 +211,7 @@
     echo "<p>Kolmas pilt:</p>";
     echo "<img src='img/{$pildid[2]}' class='img-fluid' alt='Third Image'><br><br>";
     
-    echo "<p>Kõik pildid:</p>";
+    echo "<p>KĆµik pildid:</p>";
     echo "<div class='container'><div class='row'>";
     foreach ($pildid as $pilt) {
         echo "<div class='col-md-2'><img src='img/$pilt' class='img-fluid' alt='$pilt'></div>";
@@ -225,3 +225,9 @@
 
 </body>
 </html>
+
+
+
+
+
+
