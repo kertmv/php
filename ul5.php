@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>05 - PHP - Massiivid</title>
+<title>PHP 5</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
@@ -10,21 +10,21 @@
     <?php
     $tudrukud = array("Subaru","BMW","Acura","Mercedes-Benz","Lexus","GMC","Volvo","Toyota");
     sort($tudrukud);
-    echo "<h2>Sorteeritud tüdrukute nimed:</h2>";
+    echo "<p>Sorteeritud tüdrukute nimed:</p>";
     echo "<ul>";
     foreach ($tudrukud as $nimi) {
         echo "<li>$nimi</li>";
     }
     echo "</ul>";
-        echo "<h2>Esimesed 3 tüdruku nime:</h2>";
+        echo "<p>Esimesed 3 tüdruku nime:</p>";
         echo "<ul>";
         for ($i = 0; $i < 3; $i++) {
             echo "<li>{$tudrukud[$i]}</li>";
         }
         echo "</ul>";
-        echo "<h2>Viimane tüdruku nimi:</h2>";
+        echo "<p>Viimane tüdruku nimi:<p>";
         echo "<p>{$tudrukud[count($tudrukud) - 2]}</p>";
-        echo "<h2>Suvaline tüdruku nimi:</h2>";
+        echo "<p>Suvaline tüdruku nimi:</p>";
         $suvanimi = rand(0, count($tudrukud) - 1);
         echo "<p>{$tudrukud[$suvanimi]}</p>";
         ?>
@@ -39,12 +39,12 @@
 
     $vinkood = array("1GKS1GKC8FR966658", "1FTEW1C87AK375821", "1G4GF5E30DF760067", "1FTEW1CW9AF114701", "WAUGGAFC8CN433989", "3G5DA03E83S704506", "4JGDA2EB0DA207570", 
     "1FTEW1E88AK070552", "SAJWA0F77F8732763", "JHMFA3F21BS660717", "JTHBP5C29C5750730", "WA1LFAFP9DA963060", "3D7TT2CT6BG521976", "WVWN7EE961049", 
-    "2C3CA5CG3BH341234", "YV4952CFXC162587", "KNALN4D71F5805172", "JN1CV6EK7BM903692", "5FRYD3H84EB186765", "WAUL64B83N441878", "WDDGF4HBXCF845665", 
+    "2C3CA5CG3Bp41234", "YV4952CFXC162587", "KNALN4D71F5805172", "JN1CV6EK7BM903692", "5FRYD3H84EB186765", "WAUL64B83N441878", "WDDGF4HBXCF845665", 
     "WAUKF78E45A133973", "JN1BY0AR2AM022612", "WA1EY74L69D931520", "3GYFNGEYXBS290465", "1D7CW2GK4AS059336", "JN8AZ1FY5EW087447", "WAUBF78E57A343355", 
     "SCFFBCCD8AG695133", "WBAWC73548E143482", "3GYFNGE38DS093883", "SCBCP73WC348460", "JN8AE2KPXE9353316", "2C3CDXDT2EH018229", "1G6AH5SX7D0325662", 
     "WVWED7AJ7DW431402", "1FTKR1AD3AP316066", "WBAKF5C52CE612586", "1FTNX2A57AE16083", "WAUCFAFR1AA166821", "SCFFDAAM3EG486065", "1G4PR5SK5F4821043", 
     "1C3CDFCB4ED858321", "1N6AD0CW8EN722090", "1NXBU4EE0AZ438077", "2T1BPRHE7FC131594", "JH4KB1637C451183", "1C4NJCBA7ED747024", "WAUHF68P86A736691", 
-    "3D7TT2HT1AG96429", "5GADX23L96D250838", "5FRYD3H25FB985936", "1G4GG5E30DF126304", "KNADH5A38B6072755", "WAUBFAFL1BA477979", "3C63DRL4CG674293", 
+    "3D7TT2HT1AG96429", "5GADX23L96D250838", "5FRYD3p5FB985936", "1G4GG5E30DF126304", "KNADH5A38B6072755", "WAUBFAFL1BA477979", "3C63DRL4CG674293", 
     "1G6AR5SX0E0834815", "1NXBU4EE2AZ309838", "WAUKGBFB4AN797783", "JN1AJ0HP8AM801887", "WAUPL68E25A448831", "WA1C8BFP3FA535374", "WAUHE78P78A019744", 
     "TRURD38J081400551", "1G4HP52K95428171", "5N1CR2MN1EC607241", "5UMDU93417L322773", "1G6AJ5S35F09585", "JN1CV6AP3BM234743", "SCBCR63W66C842051", 
     "SCFFDCBD2AG509467", "WBA3C1C58CA664091", "1D7RW2BK6BS922303", "WAUDH98E67A546009", "2HNYB1H46CH683844", "3VW467AT4DM257275", "WDDGF4HB7CA515172", 
@@ -53,11 +53,11 @@
     "1N6AA0CJ1D57470", "WAUEG98E76A780908", "WAUAF78E96A920706", "1GT01XEG8FZ268942", "1FTEW1CW4AF371278", "JN1AZ4EH8DM531691", "WAUEKAFBXAN294295", 
     "1N6AA0EDXFN868772", "WBADW3C59DJ422810"
     );
-    echo "<h3>Autode arv</h3>";
+    echo "<p>Autode arv</p>";
     $autodearv = count($auto);
     echo "<p>Autode arv: $autodearv</p>";
 
-    echo "<h3>Kas massivid on ühe pikkused?</h3>";
+    echo "<p>Kas massivid on ühe pikkused?</p>";
     if (count($auto) == count($vinkood)) {
         echo "<p>Massiivid on ühepikkused</p>";
     } else {
@@ -73,11 +73,11 @@
             $audid++;
         }
     }
-    echo "<h3>Toyotade arv</h3>";
+    echo "<p>Toyotade arv</p>";
     echo "<p>Toyota marki autosid: $toyotad</p>";
-    echo "<h3>Audide arv</h3>";
+    echo "<p>Audide arv</p>";
     echo "<p>Audi marki autosid: $audid</p>";
-    echo "<h3>Vin koodid mille arv on väiksem kui 17</h3>";
+    echo "<p>Vin koodid mille arv on väiksem kui 17</p>";
     echo "<p>VIN koodid, mille märkide arv on väiksem kui 17:</p>";
     foreach ($vinkood as $vin) {
         if (strlen($vin) < 17) {
@@ -92,12 +92,12 @@
 
     $palkkesk = $palksum / count($palgad);
 
-    echo "<h3>Keskmine palk</h3>";
+    echo "<p>Keskmine palk</p>";
     echo "2018 palkade keskmine oli: $palkkesk";
     ?>
     
     <form action="" method="GET">
-    <h3>Eemalda firma nimi</h3>
+    <p>Eemalda firma nimi</p>
     <label for="nim1">Sisesta firma nimi, mida soovid eemaldada:</label><br>
     <input type="text" id="nim1" name="nim1"><br>
     <input type="submit" value="Eemalda">
@@ -107,7 +107,7 @@
     
     sort($firmad);
     
-    echo "<h2>Firmade nimed:</h2>";
+    echo "<p>Firmade nimed:</p>";
     echo "<ul>";
     foreach ($firmad as $nimi) {
         echo "<li>$nimi</li>";
@@ -120,7 +120,7 @@
             $x = array_search($nim1, $firmad);
             unset($firmad[$x]);
             sort($firmad);
-            echo "<h2>Firmade nimed pärast eemaldamist:</h2>";
+            echo "<p>Firmade nimed pärast eemaldamist:</p>";
             echo "<ul>";
             foreach ($firmad as $nimi) {
                 echo "<li>$nimi</li>";
@@ -141,7 +141,7 @@
     $pik = array_map("strlen", $riigid);
     $inde = array_search(max($pik), $pik);
     
-    echo "<h3>Kõige pikem riik</h3>";
+    echo "<p>Kõige pikem riik</p>";
     echo $riigid[$inde];
     echo "<br>";
     echo max($pik);
@@ -154,13 +154,13 @@
     );
     
     sort($nimed);
-    echo "<h1>Chinese</h1>";
-    echo "<h3>Esimene chinese text</h3>";
+    echo "<p>hiina</p>";
+    echo "<p>Esimene hiina text</p>";
     echo "Esimene nimi: " . $nimed[0] . "<br>";
-    echo "<h3>viimane chinese text</h3>";
+    echo "<p>viimane hiina text</p>";
     echo "Viimane nimi: " . end($nimed) . "<br>";
     
-    echo "<h3>Nimed kasvavas järjekorras:</h2>";
+    echo "<p>Nimed kasvavas järjekorras:</p>";
     echo "<ul>";
     foreach ($nimed as $nim2) {
         echo "<li>$nim2</li>";
@@ -168,7 +168,7 @@
     echo "</ul>";
     ?>
     <form action="" method="GET">
-    <h3>Otsingumootor</h3>
+    <p>Otsingumootor</p>
     <label for="ots">Otsi nime</label><br>
     <input type="text" id="ots" name="ots"><br>
     <input type="submit" value="otsi">
@@ -208,10 +208,10 @@
         copy($pilt, "img/$pilt");
     }
     
-    echo "<h2>Kolmas pilt:</h2>";
+    echo "<p>Kolmas pilt:</p>";
     echo "<img src='img/{$pildid[2]}' class='img-fluid' alt='Third Image'><br><br>";
     
-    echo "<h2>Kõik pildid:</h2>";
+    echo "<p>Kõik pildid:</p>";
     echo "<div class='container'><div class='row'>";
     foreach ($pildid as $pilt) {
         echo "<div class='col-md-2'><img src='img/$pilt' class='img-fluid' alt='$pilt'></div>";
@@ -223,8 +223,5 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
